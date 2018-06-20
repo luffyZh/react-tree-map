@@ -56,17 +56,17 @@
     text-decoration: none
 }
 
-
 .tree li span:hover {
     border: 1px solid #40a9ff;
- }
-
-.tree li.li-parent>span {
-    cursor: pointer
 }
 
-.tree > ul > li::before,
-.tree > ul > li::after {
+.tree li.li-parent>span {
+    position: relative;
+    cursor: text;
+}
+
+.tree>ul>li::before,
+.tree>ul>li::after {
     border: 0
 }
 
@@ -74,7 +74,7 @@
     height: 30px
 }
 
-.tree li.root-node > span {
+.tree li.root-node>span {
     width: 36px;
     height: 36px;
     padding: 4px;
@@ -87,6 +87,28 @@
     line-height: 32px;
     font-weight: 100;
 }
+
 .root-icon:hover {
+    color: #40a9ff
+}
+
+.file-img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: top;
+    padding-right: 4px;
+}
+
+.icon-group {
+    display: inline-block;
+}
+.icon-group .operate-icon {
+    display: inline;
+    cursor: pointer;
+    font-size: 24px;
+    vertical-align: baseline;
+}
+.operate-icon:hover {
     color: #40a9ff
 }

@@ -1,0 +1,23 @@
+{
+  "name": "react-tree-map",
+  "version": "1.0.0",
+  "description": "A react component for auto generate a beautiful tree node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luffyZh/react-tree-map.git"
+  },
+  "keywords": [
+    "react",
+    "tree-node"
+  ],
+  "author": "luffyZhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luffyZh/react-tree-map/issues"
+  },
+  "homepage": "https://luffyzh.github.io/react-tree-map"
+}
