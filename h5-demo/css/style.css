@@ -51,7 +51,11 @@
     -webkit-border-radius: 5px;
     border: 1px solid #999;
     border-radius: 5px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    min-width: 200px;
     padding: 3px 8px;
     text-decoration: none
 }
@@ -74,12 +78,20 @@
     height: 30px
 }
 
-.tree li.root-node>span {
+.tree li.root-node>div {
     width: 36px;
     height: 36px;
     padding: 4px;
     border-radius: 50%;
     text-align: center;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+.tree li.root-node>div:hover {
+  color: #40a9ff;
+  border-color: #40a9ff;
 }
 
 .root-icon {
@@ -97,18 +109,31 @@
     height: 20px;
     cursor: pointer;
     vertical-align: top;
-    padding-right: 4px;
+    padding-right: 6px;
+    border-right: 1px solid #ddd;
 }
 
 .icon-group {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    border-left: 1px solid #ddd;
 }
 .icon-group .operate-icon {
-    display: inline;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    font-size: 24px;
-    vertical-align: baseline;
+    padding: 0 2px;
+    color: #666;
 }
 .operate-icon:hover {
     color: #40a9ff
+}
+p.leaf-content {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0 6px;
+  width: fit-content;
+  min-width: 100px;
 }
